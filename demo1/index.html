@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>栅格</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<style>
+		[class*="col-"]{
+			/*background-color: #eee;*/
+			/*border: 1px solid #ddd;*/
+			background-color: rgba(86,61,124,.15);
+			border: 1px solid rgba(86,61,124,.2);
+			padding-top: 10px;
+			padding-bottom: 15px;
+		}
+	</style>
+</head>
+<body>
+<!--.col-xs- 小屏手机 <768px -->
+<!--.col-sm- 小平板 >=768px -->
+<!--.col-md- 中等显示器 >=992px -->
+<!--.col-lg- 大屏幕显示器 >=1200px -->
+
+<div class="container">
+
+	<!--栅格最多12列排列-->
+	<div class="row">
+		<div class="col-md-1">栅</div>
+		<div class="col-md-1">格</div>
+		<div class="col-md-1">系</div>
+		<div class="col-md-1">统</div>
+		<div class="col-md-1">最</div>
+		<div class="col-md-1">多</div>
+		<div class="col-md-1">一</div>
+		<div class="col-md-1">行</div>
+		<div class="col-md-1">12</div>
+		<div class="col-md-1">列</div>
+		<div class="col-md-1">排</div>
+		<div class="col-md-1">列</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">.col-md-4</div>
+		<div class="col-md-4">.col-md-4</div>
+		<div class="col-md-4">.col-md-4</div>
+	</div>
+
+	<!--col-xs-*，手机端小屏样式-->
+	<div class="row">
+		<div class="col-xs-4">.col-xs-4</div>
+		<div class="col-xs-8">.col-xs-8</div>
+	</div>
+
+	<!--混合写法，自动识别，针对不同终端-->
+	<div class="row">
+		<div class="col-xs-4 col-md-8">-xs-4 -md-8</div>
+		<div class="col-xs-8 col-md-4">-xs-8 -md-4</div>
+	</div>
+
+	<!--列偏移-->
+	<div class="row">
+		<div class="col-md-1">md-1</div>
+		<div class="col-md-1">md-1</div>
+		<div class="col-md-1">md-1</div>
+		<div class="col-md-1">md-1</div>
+		<div class="col-md-1">md-1</div>
+		<div class="col-md-1">md-1</div>
+		<div class="col-md-1">md-1</div>
+		<div class="col-md-1">md-1</div>
+		<div class="col-md-1">md-1</div>
+		<div class="col-md-1">md-1</div>
+		<div class="col-md-1">md-1</div>
+		<div class="col-md-1">md-1</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">md-4 offset-4</div>
+	</div>
+
+	<!--嵌套-->
+	<div class="row">
+		<div class="col-md-9">
+			col-md-9
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					嵌套 col-md-10 col-md-offset-1
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--排序-->
+	<div class="row">
+		<div class="col-md-9 col-md-push-2">col-md-9 push右移2</div>
+		<div class="col-md-3 col-md-pull-2">col-md-3 pull左移2</div>
+	</div>
+
+
+</div>
+
+</body>
+</html>

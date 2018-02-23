@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>排版</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1>这是标题H1 <small>副标题</small></h1>
+		<p>普通段落p.普通段落p.普通段落p.普通段落p.普通段落p.<br/>普通段落p.普通段落p.普通段落p.普通段落p.</p>
+		<p>普通段落p.普通段落p.普通段落p.普通段落p.普通段落p.</p>
+		<p class="lead">lead突出段落p.lead突出段落p.lead突出段落p.lead突出段落p.</p>
+		<p>普通段落p.<mark>mark段落p.</mark><s>s无用段落p.</s><del>del删除段落p.</del>普通段落p.</p>
+		<p>普通段落p.<ins>ins插入段落p.</ins><u>u下划线段落p.</u><strong>strong着重段落p.</strong></p>
+		<p>普通段落p.<em>em斜体段落p.</em><small>small小字体p.</small></p>
+
+		<!--对齐-->
+		<p class="text-left">左对齐</p>
+		<p class="text-center">居中</p>
+		<p class="text-right">右对齐</p>
+		<p class="text-justify">左右对齐</p>
+		<p class="text-nowrap">不换行</p>
+
+		<!--大小写-->
+		<p class="text-lowercase">Lowercased text.小写</p>
+		<p class="text-uppercase">Uppercased text.大写</p>
+		<p class="text-capitalize">Capitalized text.首字母大写</p>
+
+		<!--缩略语-->
+		<p>这是<abbr title="缩略语">缩</abbr>略语</p>
+		<p><abbr title="hello abbr">This</abbr> is a test.hi,abbr.abbr增加鼠标悬停缩略语.</p>
+		<p><abbr title="hi abbr initialism" class="initialism">This</abbr> is a test.hi,abbr initialism.initialism转换大写</p>
+
+		<!--地址-->
+		<address>
+			<strong>hi,address</strong><br>
+			<abbr title="Phone">P:</abbr> (123) 456-7890
+		</address>
+
+		<!--引用-->
+		<blockquote>
+			<p>blockquote，引用，左侧增加了小标识</p>
+			<footer>footer,来自于<cite title="原标题的解释">原标题</cite></footer>
+		</blockquote>
+		<blockquote class="blockquote-reverse">
+			<p>blockquote-reverse，可以右对齐</p>
+			<footer>hi,<cite title="hello,will">will</cite></footer>
+		</blockquote>
+
+		<!--列表-->
+		<ul>
+			<li>hello</li>
+			<li>hello</li>
+				<ul>
+					<li>hi</li>
+					<li>hi</li>
+					<li>hi</li>
+				</ul>
+			<li>hello</li>
+			<li>hello</li>
+		</ul>
+		<ol>
+			<li>hi</li>
+			<li>bootstrap</li>
+				<ol>
+					<li>栅格</li>
+					<li>排版</li>
+				</ol>
+		</ol>
+		<ul class="list-unstyled">
+			<li>没有</li>
+			<li>样式</li>
+		</ul>
+		<ul class="list-inline">
+			<li>同一</li>
+			<li>行内</li>
+		</ul>
+
+		<!--描述-->
+		<dl>
+			<dt>hi，这是一个描述</dt>
+			<dd>这是描述的内容</dd>
+		</dl>
+		<dl class="dl-horizontal">
+			<dt>hi，这是一个水平排列的描述</dt>
+			<dd>这也是描述的内容</dd>
+		</dl>
+
+	</div>
+</body>
+</html>
